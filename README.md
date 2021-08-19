@@ -41,7 +41,7 @@ print(torch.__version__)
 
 ## Model Design
 
-- $\hat y = x \times m + b$
+- \hat y = x \times m + b
 
 ## Linear Regression (선형 회귀)
 
@@ -59,7 +59,7 @@ print(torch.__version__)
 
 ## Gradient Descent Algorithm
 
-![Untitled](PyTorch%20Lecture%20-%20Sung%20Kim%20050e2b367db54ab9a3567f4fa90bfa9c/Untitled.png)
+![](image/loss_graph.png)
 
 - Lecture 02에서 그린 Loss Graph의 기울기를 바탕으로 w의 값을 줄일지 늘릴지 결정함.
 - 즉 기울기가 0이 되도록 w값을 조정하는 알고리즘
