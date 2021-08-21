@@ -41,7 +41,7 @@ print(torch.__version__)
 
 ## Model Design
 
-- \hat y = x \times m + b
+- $$\hat y = x \times m + b$$
 
 ## Linear Regression (선형 회귀)
 
