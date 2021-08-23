@@ -16,14 +16,21 @@ def loss(y_pred, y_val):
 # Before training
 print("Prediction (before training)",  4, forward(4).item())
 
+# learning rate
+alpha = 0.01
+times = 10
+
 # Training loop
-for epoch in range(10):
+for epoch in range(times):
     for x_val, y_val in zip(x_data, y_data):
         y_pred = forward(x_val) # 1) Forward pass
         l = loss(y_pred, y_val) # 2) Compute loss
         l.backward() # 3) Back propagation to update weights
         print("\tgrad: ", x_val, y_val, w.grad.item())
-        w.data = w.data - 0.01 * w.grad.item()
+        w.data = w.data - alpha * w.grad.item()
+        # as same as
+        # w = w - alpha * grad
+        # in previous code
 
         # Manually zero the gradients after updating weights
         w.grad.data.zero_()
