@@ -21,7 +21,7 @@ alpha = 0.01
 times = 10
 
 # Training loop
-for epoch in range(10):
+for epoch in range(times):
     for x_val, y_val in zip(x_data, y_data):
         y_pred = forward(x_val) # 1) Forward pass
         l = loss(y_pred, y_val) # 2) Compute loss

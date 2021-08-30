@@ -7,7 +7,6 @@ y_data = tensor([[2.0], [4.0], [6.0]])
 
 # nn.Module is parent of class Model
 
-
 class Model(nn.Module):
     def __init__(self):
         """
@@ -28,6 +27,7 @@ class Model(nn.Module):
 
 # our model
 model = Model()
+
 
 # Construct our loss function and an Optimizer. The call to model.parameters()
 # in the SGD constructor will contain the learnable parameters of the two
