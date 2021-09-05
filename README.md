@@ -41,7 +41,7 @@ print(torch.__version__)
 
 ## Model Design
 
-- $ \hat y = x \times m + b $
+- <img src="https://render.githubusercontent.com/render/math?math=\hat y = x\times m \+ b"> 
 
 ## Linear Regression (선형 회귀)
 
@@ -49,8 +49,8 @@ print(torch.__version__)
 
 ## Traning Loss (Error)
 
-- $loss = (\hat y - y)^2$
-- $MSE = \frac 1 N \sum\limits_{n=1}^N (\hat y_n - y_n)^2$
+- <img src="https://render.githubusercontent.com/render/math?math=loss = (\hat y - y)^2">
+- <img src="https://render.githubusercontent.com/render/math?math=loss = MSE = \frac 1 N \sum\limits_{n=1}^N (\hat y_n - y_n)^2">
     - Mean Square Error
 
 # Lecture 03 : Gradient Descent
